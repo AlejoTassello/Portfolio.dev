@@ -1,0 +1,39 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Web. Freelancer",
+    company: "Freelancer",
+    description:
+      "Desarrollo páginas web como freelancer, integrando sistemas de roles de usuario, paneles de administración y seguridad con JWT. Además, diseño landing pages atractivas y funcionales, y despliego las aplicaciones en servidores hosting.",
+    link: "#",
+  },
+  {
+    date: "Noviembre 2023",
+    title: "Graduado como Técnico Universitario en Programación",
+    company: "UTN regional Venado Tuerto",
+    description:
+      "Domino lenguajes frontend como HTML y CSS, y frameworks como Angular, con los que conecto al backend desarrollado en Spring Boot. He realizado proyectos funcionales con integración frontend-backend y finalicé mi carrera con un proyecto en una empresa real.",
+  },
+  {
+    date: "Marzo 2022",
+    title: "Comienzo de la carrera",
+    company: "UTN regional Venado Tuerto",
+    description:
+      "En 2022, comencé a aprender Java e incorporé el framework Spring Boot para realizar mis primeros proyectos CRUD conectados a bases de datos MySQL",
+  }
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+         EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+    }                  
+</ol>
+
