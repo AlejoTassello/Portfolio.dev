@@ -11,11 +11,6 @@ const navItems = [
     url: "/#proyectos",
   },
   {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
-  },
-  {
     title: "Contacto",
     label: "contacto",
     url: "+15 2473 5026-67",
@@ -24,14 +19,14 @@ const navItems = [
 ---
 
 
-<header class="flex justify-between items-center py-5 w-full xl:w-[1120px] mx-auto">
-<img class="rounded-full w-12 h-12" src="/perfil.jpeg" alt="foto perfil">
+<header class="flex justify-between items-center py-5  w-full xl:w-[1120px]  mx-auto">
+<img class="rounded-full w-12 h-12 ml-3 sm:ml-0" src="/perfil.jpeg" alt="foto perfil">
 
-<nav class="flex flex-row gap-x-10 opacity-80">
+<nav class="flex flex-row gap-x-3 sm:gap-x-10 sm:ml-auto opacity-80 ">
     {
         navItems.map((link) => (
           <a
-            class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500"
+            class="relative block px-2 py-2 transition hover:text-white dark:hover:text-white"
             aria-label={link.label}
             href={link.url}
           >
